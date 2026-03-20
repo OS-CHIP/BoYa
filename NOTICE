@@ -1,0 +1,105 @@
+BoYa - A waveform viewing and analysis tool with dual support for FST and VCD files.
+Copyright 2025 OSCHIP
+
+This product includes software licensed under the Apache License 2.0.
+For details, please see the LICENSE file.
+
+========================================================================
+Third-Party Components
+========================================================================
+
+This project is based on or uses the following third-party components:
+
+1.  Slang - A SystemVerilog Compiler Infrastructure
+    *   License: MIT License
+    *   Copyright Notice: Copyright (c) 2015-2025 Michael Popoloski
+    *   Project Homepage: https://github.com/MikePopoloski/slang
+    *   Usage: This tool invokes the Slang executable to parse SystemVerilog source code and generate AST in JSON format.
+    *   Relationship: This tool acts as a wrapper/frontend, executing the Slang compiler as a separate process and processing its JSON output.
+
+2.  Qt Framework - A GUI Application Framework
+    *   License: GNU Lesser General Public License v3 (LGPL v3)
+    *   Copyright Notice: Copyright (C) The Qt Company Ltd.
+    *   Project Homepage: https://www.qt.io/
+    *   Version: Qt 6.x (Community Edition)
+    *   Usage: Framework for developing the user interface.
+    *   Relationship: This tool uses Qt as its GUI framework.
+
+3.  FST Library Implementation
+    *   Primary Implementation: Modified version of FST library code
+    *   File Format Origin: Based on GTKWave's FST format
+    *   License: MIT License (for the specific implementation files used)
+    *   Components and Copyrights:
+        a. FastLZ Compression Library
+           - Copyright: Copyright (C) 2005-2007 Ariya Hidayat (ariya@kde.org)
+           - License: MIT License
+           - SPDX Identifier: MIT
+        
+        b. Core FST Library Implementation
+           - Copyright: Copyright (c) 2009-2018 Tony Bybell
+           - License: MIT License
+           - SPDX Identifier: MIT
+        
+        c. FST Library Extensions
+           - Copyright: Copyright (c) 2022 Manfred SCHLAEGL <manfred.schlaegl@gmx.at>
+           - License: MIT License
+           - SPDX Identifier: MIT
+        
+        d. LZ4 Compression Algorithm
+           - Copyright: Copyright (C) 2011-2015, Yann Collet
+           - License: BSD 2-Clause License
+           - SPDX Identifier: BSD-2-Clause
+           - Project Homepage: https://github.com/Cyan4973/lz4
+    *   Usage: FST waveform file reading and writing functionality
+    *   Relationship: Modified and integrated FST library files for waveform file support
+    *   Note: The FST file format itself is based on GTKWave's design, but the implementation is from independent library files with permissive licenses.
+
+4.  cxxopts - C++ Command Line Parser
+    *   License: MIT License
+    *   Copyright Notice: Copyright (c) 2014-2018 Jarryd Beck
+    *   Project Homepage: https://github.com/jarro2783/cxxopts
+    *   Usage: Command-line argument parsing
+    *   Relationship: Directly included as a header-only library
+
+========================================================================
+License Compatibility Notes
+========================================================================
+
+1.  Apache 2.0 and MIT License Compatibility
+    *   Slang, cxxopts, and the FST implementation files all use MIT License, which is compatible with Apache 2.0.
+    *   The Slang executable is invoked as a separate tool, and this tool only processes its output (JSON format).
+
+2.  Apache 2.0 and BSD-2-Clause Compatibility
+    *   The LZ4 component in the FST implementation uses BSD-2-Clause License, which is compatible with Apache 2.0.
+
+3.  Apache 2.0 and LGPL v3 Compatibility
+    *   Qt is licensed under LGPL v3, which is compatible with Apache 2.0 for dynamic linking.
+    *   Dynamically linking to the Qt libraries is permitted under these licenses.
+
+4.  Licensing Clarification for FST Components
+    *   The FST file format is based on GTKWave's design, but the actual implementation files used have permissive licenses (MIT and BSD-2-Clause).
+    *   This tool does NOT contain GPL-licensed code from GTKWave.
+    *   All FST-related code in this project comes from files explicitly licensed under permissive open source licenses.
+
+========================================================================
+Source Code Modifications
+========================================================================
+
+The following third-party code has been modified for integration:
+
+1.  FST Library Files
+    *   Modified to integrate with this tool's architecture
+    *   Original permissive licenses (MIT/BSD) allow modification
+    *   All original copyright notices and license headers have been preserved
+
+2.  Other third-party components are used as-is without modification.
+
+========================================================================
+How to Comply with Apache 2.0 Requirements
+========================================================================
+
+1.  When distributing this software, you MUST include this NOTICE file.
+2.  You MUST include the full text of the Apache License 2.0.
+3.  If you modify this software, you MUST retain all copyright notices.
+4.  You may add your own copyright notices, but you must NOT remove existing ones.
+5.  For modified FST files, the original MIT/BSD license notices MUST remain intact.

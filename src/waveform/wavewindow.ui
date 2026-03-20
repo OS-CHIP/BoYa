@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WaveWindow</class>
+ <widget class="QMainWindow" name="WaveWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>901</width>
+    <height>58</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>&lt;Wave:1&gt;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpenWaveFile"/>
+   <addaction name="actionSignalAdd"/>
+   <addaction name="separator"/>
+   <addaction name="actionZoomIn"/>
+   <addaction name="actionZoomOut"/>
+   <addaction name="separator"/>
+   <addaction name="actionPre"/>
+   <addaction name="actionNext"/>
+  </widget>
+  <action name="actionOpenWaveFile">
+   <property name="icon">
+    <iconset resource="../static/myresources.qrc">
+     <normaloff>:/icons/icons/openWaveformFile.png</normaloff>:/icons/icons/openWaveformFile.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionSignalAdd">
+   <property name="icon">
+    <iconset resource="../static/myresources.qrc">
+     <normaloff>:/icons/icons/signal.png</normaloff>:/icons/icons/signal.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Get Signals</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="../static/myresources.qrc">
+     <normaloff>:/icons/icons/zoomin.png</normaloff>:/icons/icons/zoomin.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Zoom In</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="../static/myresources.qrc">
+     <normaloff>:/icons/icons/zoomout.png</normaloff>:/icons/icons/zoomout.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Zoom Out</string>
+   </property>
+  </action>
+  <action name="actionPre">
+   <property name="icon">
+    <iconset resource="../static/myresources.qrc">
+     <normaloff>:/icons/icons/pre.png</normaloff>:/icons/icons/pre.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Search Backward</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="icon">
+    <iconset resource="../static/myresources.qrc">
+     <normaloff>:/icons/icons/next.png</normaloff>:/icons/icons/next.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Search Forward</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionReload">
+   <property name="text">
+    <string>Reload</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionGet_Signals">
+   <property name="text">
+    <string>Get Signals...</string>
+   </property>
+  </action>
+  <action name="actionGet_All_Signals">
+   <property name="text">
+    <string>Get All Signals</string>
+   </property>
+  </action>
+  <action name="actionAdd_Signal_by_Name">
+   <property name="text">
+    <string>Add Signal by Name...</string>
+   </property>
+  </action>
+  <action name="actionSelect">
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </action>
+  <action name="actionDeselect_All">
+   <property name="text">
+    <string>Deselect All</string>
+   </property>
+  </action>
+  <action name="actionHierarchical_Name">
+   <property name="text">
+    <string>Hierarchical Name</string>
+   </property>
+  </action>
+  <action name="actionSignal_Type">
+   <property name="text">
+    <string>Signal Type</string>
+   </property>
+  </action>
+  <action name="actionHighlight_Selected_Signals">
+   <property name="text">
+    <string>Highlight Selected Signals</string>
+   </property>
+  </action>
+  <action name="actionValues_at_Cursor_Marker">
+   <property name="text">
+    <string>Values at Cursor/Marker</string>
+   </property>
+  </action>
+  <action name="actionLeading_Zeros">
+   <property name="text">
+    <string>Leading Zeros</string>
+   </property>
+  </action>
+  <action name="actionZoom">
+   <property name="text">
+    <string>Zoom</string>
+   </property>
+  </action>
+  <action name="actionPan">
+   <property name="text">
+    <string>Pan</string>
+   </property>
+  </action>
+  <action name="actionSignal_Event_Report">
+   <property name="text">
+    <string>Signal Event Report</string>
+   </property>
+  </action>
+  <action name="actionAuto_Update">
+   <property name="text">
+    <string>Auto Update</string>
+   </property>
+  </action>
+  <action name="actionSpacing">
+   <property name="text">
+    <string>Spacing</string>
+   </property>
+  </action>
+  <action name="actionHight">
+   <property name="text">
+    <string>Hight</string>
+   </property>
+  </action>
+  <action name="actionSet_Radix">
+   <property name="text">
+    <string>Set Radix</string>
+   </property>
+  </action>
+  <action name="actionSet_Notation">
+   <property name="text">
+    <string>Set Notation</string>
+   </property>
+  </action>
+  <action name="actionProperty">
+   <property name="text">
+    <string>Property</string>
+   </property>
+  </action>
+  <action name="actionClassic_Transaction">
+   <property name="text">
+    <string>Classic Transaction</string>
+   </property>
+  </action>
+  <action name="actionClassic_Message">
+   <property name="text">
+    <string>Classic Message</string>
+   </property>
+  </action>
+  <action name="actionGo_To">
+   <property name="text">
+    <string>Go To</string>
+   </property>
+  </action>
+  <action name="actionSet_Search_Value">
+   <property name="text">
+    <string>Set Search Value</string>
+   </property>
+  </action>
+  <action name="actionSet_Search_Constraint">
+   <property name="text">
+    <string>Set Search Constraint</string>
+   </property>
+  </action>
+  <action name="actionWaveform_Time">
+   <property name="text">
+    <string>Waveform Time</string>
+   </property>
+  </action>
+  <action name="actionMarker">
+   <property name="text">
+    <string>Marker</string>
+   </property>
+  </action>
+  <action name="actionNew_Waveform">
+   <property name="text">
+    <string>New Waveform</string>
+   </property>
+  </action>
+  <action name="actionClone_Waveform">
+   <property name="text">
+    <string>Clone Waveform</string>
+   </property>
+  </action>
+  <action name="actionWaveform_Compare">
+   <property name="text">
+    <string>Waveform Compare</string>
+   </property>
+  </action>
+  <action name="actionError_Viewing">
+   <property name="text">
+    <string>Error Viewing</string>
+   </property>
+  </action>
+  <action name="actionTransaction_Debug">
+   <property name="text">
+    <string>Transaction Debug</string>
+   </property>
+  </action>
+  <action name="actionNew_Schematic">
+   <property name="text">
+    <string>New Schematic</string>
+   </property>
+  </action>
+  <action name="actionDock_to">
+   <property name="text">
+    <string>Dock to</string>
+   </property>
+  </action>
+  <action name="actionHorizontal_Split">
+   <property name="text">
+    <string>Horizontal Split</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../static/myresources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

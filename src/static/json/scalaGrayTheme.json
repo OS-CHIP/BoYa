@@ -1,0 +1,51 @@
+{
+    "_copyright": "Copyright 2025 OSCHIP",
+    "_license": "Apache License 2.0",
+    "_license_url": "http://www.apache.org/licenses/LICENSE-2.0",
+    "_notice": "Licensed under the Apache License, Version 2.0 (the 'License'); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",
+    "_": "==================================================================",  
+
+    "name": "Scala",
+    "extensions": ["scala", "sc"],
+    "keywords": [
+      "abstract", "case", "catch", "class", "def", "do", "else", "extends",
+      "false", "final", "finally", "for", "if", "implicit", "import", "lazy",
+      "match", "new", "null", "object", "override", "package", "private",
+      "protected", "return", "sealed", "super", "this", "throw", "trait",
+      "try", "true", "type", "val", "var", "while", "with", "yield","println",
+      "public","static", "assert", "boolean", "break", "byte",
+      "char", "const", "continue", "default", "double","enum", "float",
+      "for","goto", "implements", "instanceof", "int", "interface",
+      "long", "native", "short", "strictfp", "super", "switch",
+      "synchronized", "throws", "transient","void", "volatile"
+    ],
+    "types": [
+      "Actor", "ActorProxy", "ActorTask", "ActorThread", "AllRef", "Any",
+      "AnyRef", "Application", "AppliedType", "Array", "ArrayBuffer",
+      "Attribute", "BoxedArray", "BoxedBooleanArray", "BoxedByteArray",
+      "BoxedCharArray", "Buffer", "BufferedIterator", "Char", "Console",
+      "Enumeration", "Fluid", "Function", "IScheduler", "ImmutableMapAdaptor",
+      "ImmutableSetAdaptor", "Int", "Iterable", "List", "ListBuffer", "None",
+      "Option", "Ordered", "Pair", "PartialFunction", "Pid", "Predef",
+      "PriorityQueue", "PriorityQueueProxy", "Reaction", "Ref", "Responder",
+      "RichInt", "RichString", "Rule", "RuleTransformer", "Script", "Seq",
+      "SerialVersionUID", "Some", "Stream", "Symbol", "TcpService",
+      "TcpServiceWorker", "Triple", "Unit", "Value", "WorkerThread",
+      "serializable"
+    ],
+    "operators": ["=", "==", "!=", "<", "<=", ">", ">=", "+", "-", "", "/", "%", ".", "(", ")", "[", "]", "&", "|", "+", ",", "-", "/", "", "<", "=", ">", ";", "!", "%", "?", ":", "~", "^"],
+    "lineComment": "//",
+    "blockComment": {"start": "/*", "end": "*/"},
+    "formats": {
+      "keyword": {"color": "#2B5FB9"},
+      "type": {"color": "#8E44AD"},
+      "class": {"color": "#A8433A"},
+      "trait": {"color": "#27AE60"},
+      "object": {"color": "#16A085"},
+      "annotation": {"color": "#F39C12", "italic": true},
+      "comment": {"color": "#666666", "italic": true},
+      "string": {"color": "#C57D2F"},
+      "function": {"color": "#2980B9"},
+      "operator": {"color": "#138D75"}
+    }
+  }

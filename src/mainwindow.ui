@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1047</width>
+    <height>784</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BoYa</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1047</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionImport_Design"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave_Group"/>
+    <addaction name="actionLoad_Group"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menushow_window">
+     <property name="title">
+      <string>show window</string>
+     </property>
+     <addaction name="actionInstance"/>
+     <addaction name="actionEditor"/>
+     <addaction name="actionWaveform"/>
+    </widget>
+    <addaction name="menushow_window"/>
+    <addaction name="actiondefault_layout"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionGlobalSearch"/>
+    <addaction name="actionHierarchyChange"/>
+    <addaction name="actionFont"/>
+    <addaction name="actionGoToLine"/>
+    <addaction name="actionShortcuts"/>
+   </widget>
+   <widget class="QMenu" name="menuTheme">
+    <property name="title">
+     <string>Theme</string>
+    </property>
+    <addaction name="actionlight"/>
+    <addaction name="actiongray"/>
+    <addaction name="actiondark"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuTheme"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpenFile"/>
+   <addaction name="actionNewWaveform"/>
+   <addaction name="actionSignalist"/>
+   <addaction name="actionCalling"/>
+   <addaction name="actionDefinition"/>
+   <addaction name="actionBackwardHistory"/>
+   <addaction name="actionForwardHistory"/>
+   <addaction name="actionDriverIcon"/>
+   <addaction name="actionLoadIcon"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="windowTitle">
+    <string>Instance</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QHBoxLayout" name="horizontalLayout"/>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="windowTitle">
+    <string>Waveform</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QVBoxLayout" name="verticalLayout_4"/>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_3">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="windowTitle">
+    <string>*Src1:</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <layout class="QVBoxLayout" name="verticalLayout_5"/>
+   </widget>
+  </widget>
+  <action name="actionOpenFile">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/open.png</normaloff>:/icons/icons/open.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionNewWaveform">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/WaveformChart.png</normaloff>:/icons/icons/WaveformChart.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>New Waveform</string>
+   </property>
+  </action>
+  <action name="actionSignalist">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/signallist.png</normaloff>:/icons/icons/signallist.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Signal List</string>
+   </property>
+  </action>
+  <action name="actionCalling">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/corner-left-up.png</normaloff>:/icons/icons/corner-left-up.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Calling</string>
+   </property>
+  </action>
+  <action name="actionDefinition">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/corner-right-down.png</normaloff>:/icons/icons/corner-right-down.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Definition</string>
+   </property>
+  </action>
+  <action name="actionBackwardHistory">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/leftArrow.png</normaloff>:/icons/icons/leftArrow.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Backward History</string>
+   </property>
+  </action>
+  <action name="actionForwardHistory">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/rightArrow.png</normaloff>:/icons/icons/rightArrow.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Forward History</string>
+   </property>
+  </action>
+  <action name="actionDriverIcon">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/driver.png</normaloff>:/icons/icons/driver.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Driver</string>
+   </property>
+  </action>
+  <action name="actionLoadIcon">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/load.png</normaloff>:/icons/icons/load.png</iconset>
+   </property>
+   <property name="toolTip">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open File..</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+  <action name="actionImport_Design">
+   <property name="text">
+    <string>Import Design</string>
+   </property>
+  </action>
+  <action name="actionlight">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/light.png</normaloff>:/icons/icons/light.png</iconset>
+   </property>
+   <property name="text">
+    <string>light</string>
+   </property>
+  </action>
+  <action name="actiondark">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/dark.png</normaloff>:/icons/icons/dark.png</iconset>
+   </property>
+   <property name="text">
+    <string>dark</string>
+   </property>
+  </action>
+  <action name="actionGlobalSearch">
+   <property name="text">
+    <string>GlobalSearch</string>
+   </property>
+  </action>
+  <action name="actionHierarchyChange">
+   <property name="text">
+    <string>HierarchyChange</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionGoToLine">
+   <property name="text">
+    <string>Go to line</string>
+   </property>
+  </action>
+  <action name="actionShortcuts">
+   <property name="text">
+    <string>Shortcuts </string>
+   </property>
+  </action>
+  <action name="actionInstance">
+   <property name="text">
+    <string>Instance</string>
+   </property>
+  </action>
+  <action name="actionEditor">
+   <property name="text">
+    <string>Editor</string>
+   </property>
+  </action>
+  <action name="actionWaveform">
+   <property name="text">
+    <string>Waveform</string>
+   </property>
+  </action>
+  <action name="actionSave_Group">
+   <property name="text">
+    <string>Save Group</string>
+   </property>
+  </action>
+  <action name="actionLoad_Group">
+   <property name="text">
+    <string>Load Group</string>
+   </property>
+  </action>
+  <action name="actiondefault_layout">
+   <property name="text">
+    <string>default layout</string>
+   </property>
+  </action>
+  <action name="actiongray">
+   <property name="icon">
+    <iconset resource="static/myresources.qrc">
+     <normaloff>:/icons/icons/gray.png</normaloff>:/icons/icons/gray.png</iconset>
+   </property>
+   <property name="text">
+    <string>sunrise</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="static/myresources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

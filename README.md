@@ -69,7 +69,7 @@ BoYa 是一款功能丰富的高级开源波形查看与分析工具，专为数
 - 可以从下方地址直接下载我们的二进制可执行文件，即刻体验，开箱即用。
 
 ### windows版本下载地址
--https://github.com/OS-CHIP/BoYa/releases/download/V1.0.2/BoYa.zip
+- https://github.com/OS-CHIP/BoYa/releases/download/V1.0.2/BoYa.zip
 ### linux版本下载地址
 - https://github.com/OS-CHIP/BoYa/releases/download/V1.0.2/BoYa-x86_64.AppImage
 
